@@ -1,0 +1,8 @@
+{
+  "name": "react-registry",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix client run dev --",
+    "dev:server": "npm --prefix server run dev --"
+  }
+}
