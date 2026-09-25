@@ -2,7 +2,11 @@
   "name": "react-registry",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix client run dev --",
+    "dev": "concurrently -k \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "npm --prefix client run dev --",
     "dev:server": "npm --prefix server run dev --"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
